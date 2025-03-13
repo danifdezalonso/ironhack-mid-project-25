@@ -94,3 +94,44 @@
   font-weight: 400;
   line-height: normal;
 }
+
+@media only screen and (max-width: 600px) {
+  .heading-h1 {
+    font-size: 36px;
+  }
+
+  .heading-h2 {
+    font-size: 30px;
+  }
+
+  .heading-h3 {
+    font-size: 24px;
+  }
+
+  .heading-h4 {
+    font-size: 18px;
+  }
+
+  .body-intro-medium {
+    font-size: 18px;
+  }
+
+  .body-intro-regular {
+    font-size: 16px;
+  }
+
+  .headline-regular {
+    font-size: 14px;
+  }
+
+  .headline-medium {
+    font-size: 14px;
+  }
+
+  .caption1-15 {
+    font-size: 12px;
+  }
+
+  .caption2-13 {
+    font-size: 11px;
+}
