@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap");
+
+:root {
+  --font-primary: "Roboto", sans-serif; /* Fuente principal */
+}
+
+.heading-h1 {
+  color: var(--font-color);
+  font-family: var(--font-primary);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.heading-h2 {
+  color: var(--font-color);
+  font-family: var(--font-primary);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.heading-h3 {
+  color: var(--font-color);
+  font-family: var(--font-primary);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.heading-h4 {
+  color: #514d67;
+  font-family: var(--font-primary);
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.body-intro-medium {
+  color: var(--font-color);
+  font-family: var(--font-primary);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.body-intro-regular {
+  color: var(--font-color);
+  font-family: var(--font-primary);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+}
+
+.headline-regular {
+  color: #514d67;
+  font-family: var(--font-primary);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 25.5px */
+}
+
+.headline-medium {
+  color: #514d67;
+  font-family: var(--font-primary);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 22.1px */
+}
+
+.caption1-15 {
+  color: #514d67;
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.caption2-13 {
+  color: #514d67;
+  font-family: var(--font-primary);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media only screen and (max-width: 600px) {
+  .heading-h1 {
+    font-size: 36px;
+  }
+
+  .heading-h2 {
+    font-size: 30px;
+  }
+
+  .heading-h3 {
+    font-size: 24px;
+  }
+
+  .heading-h4 {
+    font-size: 18px;
+  }
+
+  .body-intro-medium {
+    font-size: 18px;
+  }
+
+  .body-intro-regular {
+    font-size: 16px;
+  }
+
+  .headline-regular {
+    font-size: 14px;
+  }
+
+  .headline-medium {
+    font-size: 14px;
+  }
+
+  .caption1-15 {
+    font-size: 12px;
+  }
+
+  .caption2-13 {
+    font-size: 11px;
+}

@@ -1,14 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="/assets/logos/circle.svg" alt="Logo" />
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#home" class="nav-link headline-medium">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link headline-medium">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#services" class="nav-link headline-medium">Services</a>
+        </li>
+      </ul>
+      <button class="cta-button headline-medium">Contact Us</button>
+      <button class="hamburger" aria-label="Toggle menu">☰</button>
+    </nav>
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1 class="heading-h1">Empower Your Business With Stunning Design!</h1>
+        <p class="body-intro-regular">
+          Circle is a digital design and development studio. We design and
+          develop astonishing websites and mobile apps.
+        </p>
+        <div class="buttons">
+          <button class="primary-button headline-medium">Get in touch</button>
+          <button class="button-secondary headline-medium">See our work</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img
+          src="/assets/hero-section/hero-image.png"
+          alt="Hero Image"
+          class="hero-image"
+        />
+      </div>
+    </section>
+    <section class="section-logo">
+      <img src="/assets/logos/airbnb-logo.svg" alt="Logo 1" />
+      <img src="/assets/logos/google-logo.svg" alt="Logo 2" />
+      <img src="/assets/logos/microsoft-logo.svg" alt="Logo 3" />
+      <img src="/assets/logos/fedex-logo.svg" alt="Logo 4" />
+      <img src="/assets/logos/amazon-logo.svg" alt="Logo 5" />
+    </section>
+
+    <section class="section-projects" id="projects">
+      <h2 class="heading-h3">Recent projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <img src="/assets/projects-section/1.jpg" alt="Project 1" />
+          <div class="title-subtitle">
+            <h3 class="body-intro-medium">Project 1</h3>
+            <p class="headline-regular">UI Design & App Development</p>
+          </div>
+          <a href="/pages/project-detail/projectDetail.html" class="button-secondary headline-regular">Learn more</a>
+        </div>
+        <div class="project-card">
+          <img src="/assets/projects-section/2.jpg" alt="Project 1" />
+          <div class="title-subtitle">
+            <h3 class="body-intro-medium">Dashcoin</h3>
+            <p class="headline-regular">Web Development</p>
+          </div>
+          <a href="/pages/project-detail/projectDetail.html" class="button-secondary headline-regular">Learn more</a>
+        </div>
+        <div class="project-card">
+          <img src="/assets/projects-section/3.jpg" alt="Project 1" />
+          <div class="title-subtitle">
+            <h3 class="body-intro-medium">Vectorify</h3>
+            <p class="headline-regular">User Experience Design</p>
+          </div>
+          <a href="/pages/project-detail/projectDetail.html" class="button-secondary headline-regular">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="memoji-line">
+        <img
+          class="memoji"
+          src="/assets/testimonial-section/memoji-1.png"
+          alt="thumbs up image"
+        />
+        <h2 class="heading-h2">Hear What Our Clients Have to Say</h2>
+        <img
+          class="memoji"
+          src="/assets/testimonial-section/memoji-2.png"
+          alt="thumbs up image"
+        />
+      </div>
+      <h4 class="body-intro-medium">
+        “Circle helped us through every stage of our startup. We really enjoyed
+        working with you.”
+      </h4>
+      <div class="memoji-line">
+        <img
+          class="memoji"
+          src="/assets/testimonial-section/memoji-3.png"
+          alt="thumbs up image"
+        />
+        <div class="people-opinion">
+          <img src="/assets/testimonial-section/profile.png" />
+          <div class="opinions">
+            <div class="opinion-card">
+              <p class="headline-regular" id="testimonial-name">
+                Kristin Watson
+              </p>
+              <p class="caption2-13" id="testimonial-company">Booking.com</p>
+            </div>
+          </div>
+        </div>
+        <img
+          class="memoji"
+          src="/assets/testimonial-section/memoji-4.png"
+          alt="thumbs up image"
+        />
+      </div>
+    </section>
+
+    <section class="section-services" id="services">
+      <h2 class="heading-h3">Our Services</h2>
+      <div class="services">
+        <div class="service-card">
+          <div class="image-background">
+            <img src="/assets/services-section/icons/1.svg" alt="Service 1" />
+          </div>
+          <div class="services-information">
+            <h3 class="body-intro-medium">User Interface Design</h3>
+            <p class="body-intro-regular" style="color: var(--neutral-medium)">
+              Circle provides you with a stunning user interface design that is
+              accessible to everyone.
+            </p>
+          </div>
+          <a href="#" class="button-secondary headline-regular">Learn more</a>
+        </div>
+        <div class="service-card">
+          <div class="image-background">
+            <img src="/assets/services-section/icons/2.svg" alt="Service 2" />
+          </div>
+          <div class="services-information">
+            <h3 class="body-intro-medium">User Experience Design</h3>
+            <p class="body-intro-regular" style="color: var(--neutral-medium)">
+              Circle always focuses on delivering the best user experience to
+              your customers.
+            </p>
+          </div>
+          <a href="#" class="button-secondary headline-regular">Learn more</a>
+        </div>
+        <div class="service-card">
+          <div class="image-background">
+            <img src="/assets/services-section/icons/3.svg" alt="Service 3" />
+          </div>
+          <div class="services-information">
+            <h3 class="body-intro-medium">Application Development</h3>
+            <p class="body-intro-regular" style="color: var(--neutral-medium)">
+              We develop high-quality mobile and web applications using the
+              latest technology stack.
+            </p>
+          </div>
+          <a href="#" class="button-secondary headline-regular">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="newsletter-container">
+        <div class="newsletter-information">
+          <h1 class="heading-h3">Do you have any questions?</h1>
+          <p class="body-intro-regular">Let us help you!</p>
+        </div>
+        <div class="input-button">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="input-email"
+          />
+          <button class="newsletter-button">Subscribe</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer-column-left">
+        <img src="/assets/logos/circle.svg" alt="Logo" />
+        <p class="headline-regular" style="color:var(--neutral-medium)">2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+      </div>
+      <div class="footer-column-right">
+        <div class="column-right">
+          <p class="headline-regular" style="color:var(--neutral-medium)">Team</p>
+          <p class="headline-regular"style="color:var(--neutral-medium)">Press</p>
+        </div>
+        <div class="column-right">
+          <p class="headline-regular" style="color:var(--neutral-medium)">Services</p>
+          <p class="headline-regular"style="color:var(--neutral-medium)">Projects</p>
+        </div>
+        <div class="column-right">
+          <p class="headline-regular"style="color:var(--neutral-medium)">About us</p>
+          <p class="headline-regular"style="color:var(--neutral-medium)">Privacy Policy</p>
+        </div>
+      </div>
+    </section>
     <script src="./index.js"></script>
-</head>
-<body>
-    <h1>Hello world</h1>
-</body>
+  </body>
 </html>
