@@ -1,0 +1,52 @@
+.contact-us {
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  background-color: rgba(107, 112, 141, 0.1);
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  height: 70px;
+}
+
+
+#message{
+    height: 200px;
+}
+form {
+  width: 100%;
+}
+#message::placeholder{
+    position: absolute;
+    top: 22px;
+    left: 2px;
+    padding: 5px 10px;
+}
+label {
+  color: var(--neutral-medium);
+}
+
+.form-contact-us {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.button{
+    width: 100%;!important
+}
+
+@media only screen and (max-width: 600px) {
+}
