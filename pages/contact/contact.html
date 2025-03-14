@@ -1,14 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./contact.css">
-</head>
-<body>
-    <h1>Contact</h1>
-    //crear variables css
-    
-</body>
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+    <link rel="stylesheet" href="../../index.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/../index.html">
+          <img src="/assets/logos/circle.svg" alt="Logo"
+        /></a>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#home" class="nav-link headline-medium">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link headline-medium">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#services" class="nav-link headline-medium">Services</a>
+        </li>
+      </ul>
+      <button class="cta-button headline-medium">Contact Us</button>
+      <button class="hamburger" aria-label="Toggle menu">☰</button>
+    </nav>
+    <section class="contact-us">
+      <h1 class="heading-h1">Contact Us</h1>
+      <div class="form-contact-us">
+        <form action="">
+          <div class="form-group">
+            <label for="fullname"
+            class="body-intro-regular"
+            style="color: var(--neutral-medium);">
+            Full name *</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your full name" 
+            />
+          </div>
+        </form>
+        <div class="row">
+            <form action="">
+                <div class="form-group">
+                  <label for="name" class="body-intro-regular" style="color: var(--neutral-medium);">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="name"
+                    placeholder="Enter your email address"
+                  />
+                </div>
+              </form>
+              <form action="">
+                <div class="form-group">
+                  <label for="name"  class="body-intro-regular" style="color: var(--neutral-medium);">Phone</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="name"
+                    placeholder="Enter phone number"
+                  />
+                </div>
+              </form>
+              </div>
+              <form action="">
+                <div class="form-group">
+                  <label for="name" class="body-intro-regular" style="color: var(--neutral-medium);">Message</label>
+                  <input
+                    type="text"
+                    id="message"
+                    name="name"
+                    placeholder="Enter your message here..."    
+                  />
+                </div>
+              </form>
+              <button style="
+    width: 100%" class="cta-button" type="submit" form="form1" value="Submit">Submit</button>
+
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+        <div class="footer-column-left">
+          <img src="/assets/logos/circle.svg" alt="Logo" />
+          <p class="headline-regular" style="color: var(--neutral-medium)">
+            2972 Westheimer Rd. Santa Ana, Illinois 85486
+          </p>
+        </div>
+        <div class="footer-column-right">
+          <div class="column-right">
+            <p class="headline-regular" style="color: var(--neutral-medium)">
+              Team
+            </p>
+            <p class="headline-regular" style="color: var(--neutral-medium)">
+              Press
+            </p>
+          </div>
+          <div class="column-right">
+            <p class="headline-regular" style="color: var(--neutral-medium)">
+              Services
+            </p>
+            <p class="headline-regular" style="color: var(--neutral-medium)">
+              Projects
+            </p>
+          </div>
+          <div class="column-right">
+            <p class="headline-regular" style="color: var(--neutral-medium)">
+              About us
+            </p>
+            <p class="headline-regular" style="color: var(--neutral-medium)">
+              Privacy Policy
+            </p>
+          </div>
+        </div>
+      </section>
+  </body>
 </html>
