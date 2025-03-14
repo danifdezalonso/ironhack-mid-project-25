@@ -12,3 +12,5 @@ hamburger.addEventListener("click", () => {
     navBar.style.flexDirection = "column";
   }
 });
+
+//let's do some logic here.
