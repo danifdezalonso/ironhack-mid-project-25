@@ -24,4 +24,4 @@ The application utilizes the following technologies:
 
 ## Author
 
-- [@danifdezalonso](https://github.com/danifdezalonsoe)
+- [@danifdezalonso](https://github.com/danifdezalonso)
