@@ -1,5 +1,5 @@
 
-# Project Title
+# Responsive website - First Ironhack's project
 
 This project is a Ironhack exercise of building a website from a Figma design. It is made in html, css & JS. 
 
