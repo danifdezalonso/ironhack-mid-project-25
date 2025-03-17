@@ -14,6 +14,17 @@ hamburger.addEventListener("click", () => {
 });
 
 //let's do some logic here.
-
 //import projects from "./projects.js";
 //send form to db
+// enviar los datos del formulario a la base de datos y enseñar un alert o un modal
+
+//hacer presentacion personal
+//que he hecho en el proyecto
+//ramas de github
+// que he aprendido
+// que me gustaria aprender
+// que me gustaria hacer
+// que me gustaria mejorar
+// demo desktop + mobile visual
+// funcionalidade de JS
+// añadir el readme
