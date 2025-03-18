@@ -1,0 +1,98 @@
+.contact-us {
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  background-color: rgba(107, 112, 141, 0.1);
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  height: 70px;
+}
+
+
+#message{
+    height: 200px;
+}
+form {
+  width: 100%;
+}
+#message::placeholder{
+    position: absolute;
+    top: 22px;
+    left: 2px;
+    padding: 5px 10px;
+}
+label {
+  color: var(--neutral-medium);
+}
+
+.form-contact-us {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.button{
+    width: 100%;!important
+    display: block;!important
+}
+.modal {
+  visibility: hidden;
+}
+
+.modal-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+}
+.submit-button {
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--primary-default);
+  color: #ffffff;
+  border: none;
+  height: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+  .submit-button{
+    width: 100%;
+    display: block;
+}
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-content {
+    background-color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+}

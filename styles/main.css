@@ -1,2 +1,10 @@
-@import url('styles/_colors.css');
-@import url('styles/_fonts.css');
+@import url('_colors.css');
+@import url('_fonts.css');
+
+*,
+*::before,
+*::after { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
