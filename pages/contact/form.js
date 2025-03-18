@@ -11,7 +11,7 @@ function validateName() {
     nameUser.style.borderStyle = "solid";
     okName = false;
   } else {
-    console.log("name validado")
+    console.log(`name validado: ${nameUser.value}`)
     document.getElementById("errorName").hidden = true;
     nameUser.style.borderStyle = "none";
     okName = true;
@@ -26,7 +26,7 @@ function validateEmail() {
     emailUser.style.borderStyle = "solid";
     okEmail = false;
   } else {
-    console.log("email validado")
+    console.log(`email validado: ${emailUser.value}`)
     document.getElementById("errorEmail").hidden = true;
     emailUser.style.borderStyle = "none";
     okEmail = true;
@@ -41,7 +41,7 @@ function validatePhone() {
     phoneUser.style.borderStyle = "solid";
     okPhone = false;
   } else {
-    console.log("phone validado")
+    console.log(`phone validado: ${phoneUser.value}`)
     document.getElementById("errorPhone").hidden = true;
     phoneUser.style.borderStyle = "none";
     okPhone = true;
@@ -56,8 +56,7 @@ function validateMessage() {
     messageUser.style.borderStyle = "solid";
     okMessage = false;
   } else {
-    console.log("message validado")
-
+    console.log(`name validado: ${messageUser.value}`)
     document.getElementById("errorMessage").hidden = true;
     messageUser.style.borderStyle = "none";
     okMessage = true;
@@ -65,13 +64,14 @@ function validateMessage() {
 }
 
 
-//enviar form
+//enviar form y limpiar campos
 function sendForm() {
   let incompleteForm = document.getElementById("errorSubmit");
   if (okName && okEmail && okPhone && okMessage) {
     incompleteForm.hidden = true;
     toggleModal();
-    let nameUser = document.getElementById("name-form");
+    let nameUser = document.getElementById("name-form"); // no hay una forma mas facil de limpiar los campos?
+    let modalName = document.getElementById("form-name-show").textContent = "Enviado! Gracias " + nameUser.value;
     nameUser.value = "";
     let emailUser = document.getElementById("email-form");
     emailUser.value = "";
@@ -79,9 +79,13 @@ function sendForm() {
     phoneUser.value = "";
     let messageUser = document.getElementById("message-form");
     messageUser.value = "";
+   
 
   } else {
     incompleteForm.hidden = false;
     incompleteForm.style.borderColor = "red";
   }
 }
+
+
+//guardar el nombre y ponerlo en el modal

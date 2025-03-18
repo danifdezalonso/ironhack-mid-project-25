@@ -29,6 +29,7 @@ async function loadProjects() {
     // Hacer la petición a la URL
     const response = await fetch(projectsUrl);
 
+
     // Verificar si la respuesta es exitosa
     if (!response.ok) {
       throw new Error("Error fetching projects: " + response.statusText);
@@ -53,7 +54,7 @@ async function loadProjects() {
           <h3 class="body-intro-medium">${project.name}</h3>
           <p class="headline-regular"><strong>Description:</strong> ${project.description}</p>
         </div>
-        <a href="/pages/project-detail/projectDetail.html" class="button-secondary headline-regular">Learn more</a>
+        <a href="/pages/project-detail/projectDetail.html?projectId=${project.uuid}" class="button-secondary headline-regular">Learn more</a>
       `;
 
       // Añadir la tarjeta al contenedor principal
