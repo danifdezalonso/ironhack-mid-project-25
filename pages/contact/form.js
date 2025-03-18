@@ -65,13 +65,21 @@ function validateMessage() {
 }
 
 
-
 //enviar form
 function sendForm() {
   let incompleteForm = document.getElementById("errorSubmit");
   if (okName && okEmail && okPhone && okMessage) {
     incompleteForm.hidden = true;
     toggleModal();
+    let nameUser = document.getElementById("name-form");
+    nameUser.value = "";
+    let emailUser = document.getElementById("email-form");
+    emailUser.value = "";
+    let phoneUser = document.getElementById("phone-form");
+    phoneUser.value = "";
+    let messageUser = document.getElementById("message-form");
+    messageUser.value = "";
+
   } else {
     incompleteForm.hidden = false;
     incompleteForm.style.borderColor = "red";
