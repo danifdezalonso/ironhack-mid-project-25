@@ -40,55 +40,66 @@
             Full name *</label>
             <input
               type="text"
-              id="name"
+              id="name-form"
               name="name"
-              placeholder="Enter your full name" 
+              placeholder="Enter your full name"
+              onblur="validateName()"
             />
+            <p id="errorName" hidden class="errorForm">Qué eres, voldemort? </p>
+
           </div>
         </form>
         <div class="row">
             <form action="">
                 <div class="form-group">
-                  <label for="name" class="body-intro-regular" style="color: var(--neutral-medium);">Email</label>
+                  <label for="name" id="email" class="body-intro-regular" style="color: var(--neutral-medium);">Email</label>
                   <input
                     type="email"
-                    id="email"
+                    id="email-form"
                     name="name"
                     placeholder="Enter your email address"
+                    onblur="validateEmail()"
                   />
+                  <p id="errorEmail" hidden class="errorForm">No me trollees, ponme un mail de verdad</p>
                 </div>
               </form>
               <form action="">
                 <div class="form-group">
-                  <label for="name"  class="body-intro-regular" style="color: var(--neutral-medium);">Phone</label>
+                  <label for="name" id="phone" class="body-intro-regular" style="color: var(--neutral-medium);">Phone</label>
                   <input
                     type="tel"
-                    id="phone"
+                    id="phone-form"
                     name="name"
                     placeholder="Enter phone number"
+                    onblur="validatePhone()"
                   />
+                  <p id="errorPhone" hidden class="errorForm">Le das tu numero a cualquiera de fiesta y a mi no? 🤔</p>
                 </div>
               </form>
               </div>
               <form action="">
                 <div class="form-group">
-                  <label for="name" class="body-intro-regular" style="color: var(--neutral-medium);">Message</label>
+                  <label for="name" id="message" class="body-intro-regular" style="color: var(--neutral-medium);">Message</label>
                   <input
                     type="text"
-                    id="message"
+                    id="message-form"
                     name="name"
-                    placeholder="Enter your message here..."    
+                    placeholder="Enter your message here..."
+                    onblur="validateMessage()"    
                   />
+                  <p id="errorMessage" hidden class="errorForm">Escribeme algo por favor 🙏🏽</p>
+
                 </div>
               </form>
               <button style="
     width: 100%" class="submit-button" type="submit" form="form1" value="Submit"
-    onclick="toggleModal()" id="submitForm">Submit</button>
+    onclick="sendForm()" id="submitForm">Submit</button>
     <div class="modal">
       <div class="modal-content">
           <p class="heading-h3">Form sent</p>
           <br>
           <h4 class="heading-h4">Form has been sent successfully!</h4>
+          <p class="errorForm" id="errorSubmit" hidden>PLEASE, REVIEW THE REQUIRED FIELDS</p>
           <button class="submit-button close-button" >Close</span>
 
       </div>
