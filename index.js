@@ -1,15 +1,19 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navBar = document.querySelector(".navbar");
+const navBarButton = document.querySelector(".cta-button");
 
 hamburger.addEventListener("click", () => {
   console.log("clicked");
   if (navMenu.style.display === "block") {
     navMenu.style.display = "none";
     navBar.style.flexDirection = "row";
+    navBarButton.style.display ="none";
+
   } else {
     navMenu.style.display = "block";
     navBar.style.flexDirection = "column";
+    navBarButton.style.display ="block";
   }
 });
 
@@ -39,7 +43,8 @@ async function loadProjects() {
     const projects = await response.json();
 
     // Limitar a los primeros 3 proyectos
-    const limitedProjects = projects.slice(0, 3);
+    const reversedProjects = projects.reverse();
+    const limitedProjects = reversedProjects.slice(0, 3);
 
     // Recorrer los proyectos limitados y añadirlos al DOM
     limitedProjects.forEach(project => {
