@@ -82,7 +82,17 @@
                 </div>
               </form>
               <button style="
-    width: 100%" class="cta-button" type="submit" form="form1" value="Submit">Submit</button>
+    width: 100%" class="submit-button" type="submit" form="form1" value="Submit"
+    onclick="toggleModal()" id="submitForm">Submit</button>
+    <div class="modal">
+      <div class="modal-content">
+          <p class="heading-h3">Form sent</p>
+          <br>
+          <h4 class="heading-h4">Form has been sent successfully!</h4>
+          <button class="submit-button close-button" >Close</span>
+
+      </div>
+  </div>
 
         </div>
       </div>
@@ -121,5 +131,7 @@
           </div>
         </div>
       </section>
+      <script src="./modal.js"></script>
+      <script src="./form.js"></script>
   </body>
 </html>
