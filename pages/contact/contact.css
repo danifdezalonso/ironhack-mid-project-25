@@ -45,8 +45,8 @@ label {
   gap: 40px;
 }
 .button{
-    width: 100%;!important
-    display: block;!important
+    width: 100%!important;
+    display: block!important;
 }
 .modal {
   visibility: hidden;
